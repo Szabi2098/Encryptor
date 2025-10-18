@@ -38,6 +38,9 @@ namespace Encryptor
                 {
                     Environment.Exit(0);
                 }
+                else{
+                    Main()
+                }
             }
         }
 
