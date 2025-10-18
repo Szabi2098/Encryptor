@@ -33,10 +33,14 @@ namespace Encryptor
             else if (valasz == "3")
             {
                 Console.WriteLine("Biztosan ki szeretne lépni? (i/n)");
-                valasz = Console.ReadLine();
-                if (valasz.ToLower() == "i")
+                string ans = Console.ReadLine();
+                if (ans.ToLower() == "i")
                 {
                     Environment.Exit(0);
+                } 
+                else if (ans == "n")
+                {
+                    Main();
                 }
             }
         }
